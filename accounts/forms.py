@@ -3,8 +3,7 @@ from .models import User
 
 
 class Userform(forms.ModelForm):
-    password = forms.CharField(
-        widget=(forms.PasswordInput()))  # you can create any custom field other then mentioned in model
+    password = forms.CharField(widget=(forms.PasswordInput()))  # you can create any custom field other then mentioned in model
     confirm_password = forms.CharField(widget=(forms.PasswordInput()))
 
     class Meta:

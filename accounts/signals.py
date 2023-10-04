@@ -15,7 +15,7 @@ def post_save_create_profile_receiver(sender, instance, created, **kwargs):
             profile.save()  # new create na hoye update hole
         except:
             UserProfile.objects.create(user=instance)
-            print("Profile was not exist, but I created one ")
+            print("Profile did not exist, but I created one ")
         print("User is Updated")
 
 

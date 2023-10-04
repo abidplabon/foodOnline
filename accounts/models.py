@@ -48,11 +48,11 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    RESTAURENT = 1
+    VENDOR = 1
     CUSTOMER = 2
 
     ROLE_CHOICE = (
-        (RESTAURENT, 'Restaurent'),
+        (VENDOR, 'Vendor'),
         (CUSTOMER, 'Customer')
     )
     # Aita te basic oi name email fiels name thakbe
